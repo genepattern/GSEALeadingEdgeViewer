@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="" default="create-zip" name="GSEALeadingEdgeViewer">
+     <property name="dirOffset" value="../common_module_code" />
+     <import file="${dirOffset}/commontargets.xml" />
+
+     <target depends="init" name="_init">
+          <mkdir dir="build" />
+     </target>
+
+     <target name="clean">
+          <delete dir="build" />
+     </target>
+
+     <target depends="init" name="create-zip">
+          <antcall target="prezip" />
+          <zip destfile="${dest.dir}/${ant.project.name}.zip" whenempty="fail" defaultexcludes="true">
+               <fileset dir="." includes="manifest, *.html" />
+               <fileset dir="lib" includes="*.jar" />
+          </zip>
+          <antcall target="postzip" />
+     </target>
+</project>
