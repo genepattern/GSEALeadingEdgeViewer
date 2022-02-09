@@ -1,6 +1,6 @@
 #Wed Apr 18 22:33:42 EDT 2007
 author=GenePattern
-commandLine=<java> <java_flags> -cp <libdir>gsea-lev-4.1.0.jar<path.separator><libdir>batik-codec-1.10.jar<path.separator><libdir>log4j-core-2.11.0.jar org.genepattern.gsea.LeadingEdgeWidget <zip.file> 
+commandLine=<java> <java_flags> -cp <libdir>gsea-4.2.2.jar<path.separator><libdir>batik-codec-1.10.jar<path.separator><libdir>log4j-core-2.17.1.jar org.genepattern.gsea.LeadingEdgeWidget <zip.file> 
 cpuType=any
 taskDoc=doc.html
 description=Leading Edge Viewer for GSEA results
@@ -15,7 +15,7 @@ quality=production
 taskType=Visualizer
 categories=gsea
 userid=GenePattern
-version=Updated to the GSEA 4.1.x code base.  Changed the category to gsea.  Simplified the build
+version=Beta series: Updated to the GSEA 4.2.2 code base, updating to Log4J 2.17.1.
 
 p1_default_value=
 p1_description=zip output file from GSEA - .zip. 
