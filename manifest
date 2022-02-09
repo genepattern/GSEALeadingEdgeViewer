@@ -4,6 +4,7 @@ commandLine=<java> <java_flags> -cp <libdir>gsea-4.2.2.jar<path.separator><libdi
 cpuType=any
 documentationUrl=https://genepattern.github.io/GSEALeadingEdgeViewer/v6/
 description=Leading Edge Viewer for GSEA results
+src.repo=https\://github.com/genepattern/GSEALeadingEdgeViewer/tree/v5.1
 JVMLevel=1.8
 language=Java
 LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.visualizer\:00073\:5.1
