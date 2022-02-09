@@ -14,7 +14,7 @@
      <target depends="init" name="create-zip">
           <antcall target="prezip" />
           <zip destfile="${dest.dir}/${ant.project.name}.zip" whenempty="fail" defaultexcludes="true">
-               <fileset dir="." includes="manifest, *.html" />
+               <fileset dir="." includes="manifest" />
                <fileset dir="lib" includes="*.jar" />
           </zip>
           <antcall target="postzip" />
